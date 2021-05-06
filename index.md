@@ -5,7 +5,8 @@ layout: landing
 # callouts: home_callouts
 show_sidebar: true
 hero_height: is-large
-sponsors: example_sponsors
+# sponsors: example_sponsors
+tools: true
 fixed_navbar: top
 # Slider Details
 slide1_title: Lanka Data Foundation

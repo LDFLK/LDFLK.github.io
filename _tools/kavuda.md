@@ -1,10 +1,9 @@
 ---
-title: Product 2 Name
-subtitle: Product 2 tagline here
+title: Kavuda.lk
+subtitle: Short description goes here
 product_code: ABC123
 layout: tools
 image: https://via.placeholder.com/640x480
-price: £0.99 + VAT
 features:
     - label: Great addition to any home
       icon: fa-location-arrow

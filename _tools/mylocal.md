@@ -13,6 +13,7 @@ features:
       icon: fa-grin-stars
     - label: Available in multiple sizes
       icon: fa-fighter-jet
+rating: 1
 ---
 
 This is the content about the product.

@@ -19,6 +19,18 @@ board:
   pic: nishand
   position: Board Member
 
+##---------------
+## team memebers
+##---------------
+team:
+- name: Sherazad Hamit
+  pic: sherazad
+  position: Program Director
+
+- name: Umayanga Gunawardhana
+  pic: umayangag
+  position: Software Engineer
+
 ---
 
 # About Us
@@ -31,6 +43,37 @@ board:
 
 <div class="columns is-multiline is-mobile">
     {% for member in page.board %}
+        <div class="column is-one-quarter">
+            <div class="card">
+                <div class="card-image level-item">
+                    <figure class="image is-fullwidth">
+                    <img class="is-rounded" src="{{ site.baseurl }}/assets/img/people/{{ member.pic }}.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">{{ member.name }}</p>
+                            <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        {{ member.position }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+### Team
+
+---
+
+<div class="columns is-multiline is-mobile">
+    {% for member in page.team %}
         <div class="column is-one-quarter">
             <div class="card">
                 <div class="card-image level-item">

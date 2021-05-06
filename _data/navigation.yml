@@ -19,14 +19,14 @@
       # - name: Document management
       #   link: /MyLocal/
     - name: Find Data
-      link: /search/
+      link: /#
     - name: Collections
-      link: /collections/
+      link: /#
 - name: Corporates
   link: /corporates/
 - name: Government Organizations
   link: /gov/
 - name: Contact Us
-  link: /showcase/
+  link: /contact/
 - name: Data Portal
-  link: /showcase/
+  link: /#
