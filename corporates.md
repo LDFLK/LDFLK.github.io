@@ -1,9 +1,8 @@
 ---
-title: Products
-subtitle: Check out our range of products
-layout: product-category
-show_sidebar: false
-sort: title
+title: Corporates
+subtitle: How we benefits Corporates
+layout: default
+permalink: /corporates/
 ---
 
 This is an example products page you can use to display a simple listing of your products and their ratings and reviews.

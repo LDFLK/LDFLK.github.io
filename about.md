@@ -13,11 +13,11 @@ board:
 
 - name: Nuwan Senaratna
   pic: nuwans
-  position: Founder
+  position: Board Member
   
 - name: Nishan De Mel
   pic: nishand
-  position: Founder
+  position: Board Member
 
 ---
 
@@ -42,7 +42,7 @@ board:
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">{{ member.name }}</p>
-                            <p class="subtitle is-6">@johnsmith</p>
+                            <!-- <p class="subtitle is-6">@johnsmith</p> -->
                         </div>
                     </div>
 
