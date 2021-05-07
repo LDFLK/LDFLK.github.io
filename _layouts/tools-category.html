@@ -9,8 +9,8 @@ show_sidebar: false
     {{ page.content }}
   </div>
 
-  {% assign sorted_tools = site.tools | sort:page.sort %}
-  <!-- {% assign sorted_tools = site.tools %} -->
+  {% assign sorted_tools = site.tools | sort: "rating" %}
+  
 
   {% for tool in sorted_tools %}
   <div class="column is-4-desktop is-6-tablet">

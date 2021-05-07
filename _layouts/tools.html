@@ -18,9 +18,9 @@ layout: default
         <p class="subtitle is-5 has-text-right">{{ page.product_code }}</p>
         {% endif %} -->
         
-        {% if page.rating %}
+        <!-- {% if page.rating %}
             {% include rating.html rating=page.rating %}
-        {% endif %}
+        {% endif %} -->
         
         {% if page.features %}
         <div class="content">
@@ -48,14 +48,14 @@ layout: default
         </div>
     </div>
 
-    {% if site.data.reviews[page.product_code] %}
+    <!-- {% if site.data.reviews[page.product_code] %}
     <div class="column is-12">
         <p class="title is-4">Reviews</p>
         {% for review in site.data.reviews[page.product_code] %}
         {% include review.html %}
         {% endfor %}
     </div>
-    {% endif %}
+    {% endif %} -->
 
 </div>
 

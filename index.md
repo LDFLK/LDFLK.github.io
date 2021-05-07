@@ -8,6 +8,7 @@ hero_height: is-large
 # sponsors: example_sponsors
 tools: true
 fixed_navbar: top
+sort_tools: rating
 # Slider Details
 slide1_title: Lanka Data Foundation
 slide1_subtitle: Bringing Data Together

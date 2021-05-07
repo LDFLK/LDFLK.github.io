@@ -3,7 +3,7 @@ title: MyLocal
 subtitle: Get to know your neighborhood government authorities, health clinics, schools and public utilities better with this dynamic online National Atlas.
 description: Get to know your neighborhood government authorities, health clinics, schools and public utilities better with this dynamic online National Atlas.
 hero_image: /assets/img/products/mylocal.jpg
-product_code: ABC124
+# product_code: ABC124
 layout: tools
 image: /assets/img/products/mylocal.jpg
 features:
@@ -13,7 +13,7 @@ features:
       icon: fa-grin-stars
     - label: Available in multiple sizes
       icon: fa-fighter-jet
-rating: 1
+rating: A
 ---
 
 This is the content about the product.
