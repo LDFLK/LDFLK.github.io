@@ -1,0 +1,32 @@
+- name: About
+  link: /about/
+- name: Data
+  link: /#
+  dropdown:
+    - name: Tools
+      link: /tools.html
+      # dropdown: 
+      # - name: MyLocal
+      #   link: /MyLocal/
+      # - name: Data Atlas
+      #   link: /MyLocal/
+      # - name: Kavuda.lk
+      #   link: /MyLocal/
+      # - name: LinkedIn
+      #   link: /MyLocal/
+      # - name: GIG
+      #   link: /MyLocal/
+      # - name: Document management
+      #   link: /MyLocal/
+    - name: Find Data
+      link: /#
+    - name: Collections
+      link: /#
+- name: Corporates
+  link: /corporates/
+- name: Government Organizations
+  link: /gov/
+- name: Contact Us
+  link: /contact/
+- name: Data Portal
+  link: /#
