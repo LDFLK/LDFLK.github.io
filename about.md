@@ -9,15 +9,15 @@ permalink: /about/
 board:
 - name: Dr. Sanjiva Weerawarana
   pic: sanjiva
-  position: Founder of LSF and WSO2
+  position: Director
 
 - name: Nuwan Senaratna
   pic: nuwans
-  position: Board Member
+  position: Director
   
 - name: Nishan De Mel
   pic: nishand
-  position: Board Member
+  position: Director
 
 ##---------------
 ## team memebers
