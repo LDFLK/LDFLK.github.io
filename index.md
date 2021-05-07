@@ -1,6 +1,6 @@
 ---
 title: Lanka Data Foundation
-subtitle: This is the demo site for Lanka Data Foundation
+subtitle: Make Sri Lanka's public data, digitized, efficiently processible, and accessible
 layout: landing
 # callouts: home_callouts
 show_sidebar: true
