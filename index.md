@@ -11,7 +11,7 @@ fixed_navbar: top
 sort_tools: rating
 # Slider Details
 slide1_title: Lanka Data Foundation
-slide1_subtitle: Bringing Data Together
+slide1_subtitle: Lanka Data Foundation aims to make 100% of Sri Lanka's public data, digitized, efficiently processible, and accessible so Sri Lankans can make meaningful use of it.
 slide1_image: /assets/img/slide2.jpeg
 slide1_link: #
 slide1_button: Find More
