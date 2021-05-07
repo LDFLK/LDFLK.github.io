@@ -1,0 +1,11 @@
+{% if page.all_news %}
+    <p class="title is-4"> News Items</p>
+
+    <div class="columns is-multiline">
+        {% for post in site.posts %}
+        <div class="column is-one-quarter">
+            {% include post-card.html %}
+        </div>
+        {% endfor %}
+    </div>
+{% endif %}
