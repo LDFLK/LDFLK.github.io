@@ -271,7 +271,6 @@ DEPENDENCIES
   bulma-clean-theme
   github-pages
   jekyll-feed (~> 0.12)
-  minima (~> 2.5)
 
 BUNDLED WITH
    2.2.2
