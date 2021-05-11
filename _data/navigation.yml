@@ -1,5 +1,10 @@
 - name: About
   link: /about/
+  dropdown:
+    - name: About us
+      link: /about/
+    - name: Data Partners
+      link: /about/data-partners/
 - name: Data
   link: /#
   dropdown:
