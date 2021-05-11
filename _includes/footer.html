@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer has-background-primary has-text-white">
     <div class="container">
         
         {% if site.footer_menu %}
@@ -12,9 +12,66 @@
             {% endfor %}
         </div>
         {% endif %}
+        <div class="columns is-multiline">
+            <div class="column is-vcentered is-half">
+                <div class=" is-flex is-align-content-center">
+                    <div  class="image is-128x128 " style="margin: auto;">
+                        <a href="{{ site.baseurl }}" class="link"> <img src="/assets/img/logo_text.png" > </a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <h1 class="is-uppercase is-family-monospace mb-6"> Supporting data integrity, transparency and accountability </h1>
 
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+                <h1> Contact </h1>
+                <a href="mailto:hello@datafoundation.lk" class="has-text-white"> hello@datafoundation.lk </a>
+            </div>
+
+            <div class="column is-full m-0">
+                <hr class="has-background-grey m-0">
+            </div>
+            
+
+            <div class="column is-half">
+                <div class="  has-text-centered ">
+                    <a class=" is-medium mr-2"
+                       onclick="window.open('https://www.facebook.com/share.php?u={{ site.url }}{{ page.url | prepend: site.baseurl }}');">
+                        <span class="icon has-text-white"><i class="fab fa-facebook fa-lg"></i></span>
+                    </a>
+                    <a class=" is-medium mr-2"
+                       onclick="window.open('https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url | prepend: site.baseurl }}');">
+                        <span class="icon has-text-white"><i class="fab fa-twitter fa-lg"></i></span>
+                    </a>
+                    <a class=" is-medium mr-2"
+                       onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url | prepend: site.baseurl }}&title={{ page.title | url_encode }}&summary=&source=');">
+                        <span class="icon has-text-white"><i class="fab fa-linkedin fa-lg"></i></span>
+                    </a>
+                    <a class=" is-medium"
+                       onclick="window.open('https://reddit.com/submit?url={{ site.url }}{{ page.url | prepend: site.baseurl }}');">
+                        <span class="icon has-text-white"><i class="fab fa-reddit fa-lg"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div class="columns is-multiline has-text-centered is-gapless">
+                    <div class="column  is-2" style="border-right: 1px solid;">
+                        <a href="{{ site.baseurl }}/about/" class="has-text-white"> About </a> 
+                    </div>
+                    <div class="column  is-2" style="border-right: 1px solid;">
+                        <a href="{{ site.baseurl }}/tools.html" class="has-text-white"> Tools </a> 
+                    </div>
+                    <div class="column  is-2">
+                        <a href="{{ site.baseurl }}/news/" class="has-text-white"> News </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="column is-full m-0">
+            <h1> Copyright @Lanka Data Foundation 2021 </h1>
+        </div>
+        <!-- <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div> -->
     </div>
 </footer>
