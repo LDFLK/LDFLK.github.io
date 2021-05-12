@@ -1,6 +1,6 @@
 ---
 title: Lanka Data Foundation
-subtitle: Make Sri Lanka's public data, digitized, efficiently processible, and accessible
+subtitle: Supporting data integrity, transparency and accountability
 layout: landing
 # callouts: home_callouts
 show_sidebar: true
@@ -26,3 +26,12 @@ slide3_image: /assets/img/slide4.jpeg
 slide3_link: #
 slide3_button: Find More
 ---
+<section class="section px-0 py-6">
+    <div class="container is-fluid p-0 m-0">
+        <div class="columns">
+            <div class="column is-full">
+                <h1> banner section </h1>
+            </div>
+        </div>
+    </div>
+</section>

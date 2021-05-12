@@ -41,7 +41,7 @@
                     {% include showcase.html %}
                     {% include sponsors.html %}
                     {% include gallery.html %}
-                    {{ content }}
+                    
                 </div>
                 {% if site.posts and page.show_sidebar %}
                 <div class="column is-4-desktop is-12-tablet">
@@ -51,6 +51,7 @@
             </div>
         </div>
     </section>
+    {{ content }}
     {% unless page.hide_footer %}
         {% include footer.html %}
     {% endunless %}
