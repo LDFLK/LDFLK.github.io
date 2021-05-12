@@ -3,9 +3,26 @@
 
     <div class="columns is-multiline">
         {% for post in site.posts %}
-        <div class="column is-one-quarter">
-            {% include post-card.html %}
-        </div>
+            {% if post.categories contains "news" %}
+                <div class="column is-one-quarter">
+                    {% include post-card.html %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <hr/>
+    <div class="block">
+        <p class="title is-4"> Press Releases</p>
+    </div>
+    
+
+    <div class="columns is-multiline">
+        {% for post in site.posts %}
+            {% if post.categories contains "press_release" %}
+                <div class="column is-one-quarter">
+                    {% include post-card.html %}
+                </div>
+            {% endif %}
         {% endfor %}
     </div>
 {% endif %}
