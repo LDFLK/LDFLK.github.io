@@ -12,7 +12,4 @@ accordion:
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
 
-This is an example products page you can use to display a simple listing of your products and their ratings and reviews.
 
-
-# FAQ
