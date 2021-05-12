@@ -30,7 +30,7 @@ slide3_button: Find More
     <div class="container is-fluid p-0 m-0">
         <div class="columns">
             <div class="column is-full">
-                <h1> banner section </h1>
+                <!-- <h1> banner section </h1> -->
             </div>
         </div>
     </div>
