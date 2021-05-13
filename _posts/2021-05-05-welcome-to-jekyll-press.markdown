@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2021-05-05 06:17:20 -0500
 categories: press_release update
+image: /assets/img/slide5.jpeg
 ---
 # This is a Press Release
 

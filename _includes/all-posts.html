@@ -1,5 +1,6 @@
 {% if page.all_news %}
-    <p class="title is-4"> News Items</p>
+    <p class="title is-4"> News Items d1</p>
+    <hr/>
 
     <div class="columns is-multiline">
         {% for post in site.posts %}
@@ -10,11 +11,73 @@
             {% endif %}
         {% endfor %}
     </div>
+
+    <p class="title is-4"> News Items d2</p>
     <hr/>
+
+    <div class="columns is-multiline">
+        {% for post in site.posts %}
+            {% if post.categories contains "news" %}
+                <div class="column is-half mb-6 pb-6">
+                  <div class="columns is-vcentered">
+                    <div class="container">
+                      <article class="media">
+                        <div class="media-left column is-4 p-0 pt-4">
+                          <div class="image ">
+                            <a href="{{ site.baseurl }}{{ post.url }}">
+                            {% if post.image %}
+                              <img src="{{ post.image }}" alt="{{ post.title }}">
+                            {% else %}
+                              <img src="https://via.placeholder.com/400x225" alt="{{ post.title }}">
+                            {% endif %}
+                            </a>
+                          </div>
+                        </div>
+                        <div class="media-content column is-7">
+                          <div class="content">
+                            <p> {{ post.date | date: "%b %-d, %Y" }} </p>
+                            <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                            <p class="is-size-7"> {% include reading-time.html %} </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <p class="title is-4"> News Items d3</p>
+    <hr/>
+
+    <div class="columns is-multiline">
+        {% for post in site.posts %}
+            {% if post.categories contains "news" %}
+                <div class="column is-half mb-6">
+                  <div class="container">
+                    <article class="media">
+                      <div class="media-content">
+                        <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        <p class="is-size-7"> {{ post.date | date: "%b %-d, %Y" }} - {% include reading-time.html %}</p>
+                        {% if post.summary %}
+                        {{ post.summary | markdownify }}
+                        {% else %}
+                        <p>{{ post.excerpt }}</p>
+                        {% endif %}
+                      </div>
+                    </article>
+                  </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
     <div class="block">
         <p class="title is-4"> Press Releases</p>
     </div>
-    
+
+    <hr/>
 
     <div class="columns is-multiline">
         {% for post in site.posts %}

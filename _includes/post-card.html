@@ -18,6 +18,7 @@
             {% else %}
                 <p>{{ post.excerpt }}</p>
             {% endif %}
+            <p class="is-size-7"> {% include reading-time.html %} </p>
         </div>
         <div class="has-text-centered">
             <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
@@ -25,5 +26,7 @@
     </div>
     <footer class="card-footer">
         <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+        
     </footer>
 </div>
+
