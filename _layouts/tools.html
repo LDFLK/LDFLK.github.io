@@ -35,7 +35,11 @@ layout: default
                 </span> 
                 <span>{{ feature.label }}</span></p>
             {% endfor %}
+            
         </div>
+        {% endif %}
+        {% if page.webapp %}
+        <p class="title is-4 "> <a target="_blank" class="button is-primary" href="{{ page.webapp }}" > Open Web App </a> </p>
         {% endif %}
     </div>
 
