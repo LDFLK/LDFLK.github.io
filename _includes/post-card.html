@@ -1,4 +1,4 @@
-<div class="card">
+<!-- <div class="card">
     {% if post.image %}
     <div class="card-image">
         <img src="{{ post.image }}" alt="{{ post.title }}">
@@ -24,6 +24,30 @@
             <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
         </div>
     </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+        
+    </footer>
+</div>
+ -->
+
+ <div class="card">
+    {% if post.image %}
+    <a class="title is-4 has-text-white" href="{{ site.baseurl }}{{ post.url }}" style="z-index: 5;position: relative;">
+    <div class="card-content" style="background-image: url( {{ post.image }} ); min-height: 200px;">
+        <div class="overlay" style="top:0; left:0; height:80%;"></div>
+        <div class="content">
+            {{ post.title}}
+    {% else %}
+    <a class="title is-4 " href="{{ site.baseurl }}{{ post.url }}">
+    <div class="card-content" style=" min-height: 200px;">
+        <!-- <div class="overlay"></div> -->
+        <div class="content">
+            {{ post.title}}
+    {% endif %}
+        </div>
+    </div>
+    </a>
     <footer class="card-footer">
         <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
         
