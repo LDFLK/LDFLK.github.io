@@ -1,5 +1,5 @@
 {% if page.all_news %}
-    <p class="title is-4"> News Items d1</p>
+    <p class="title is-4"> News Items </p>
     <hr/>
 
     <div class="columns is-multiline">
@@ -9,9 +9,11 @@
                     {% include post-card.html %}
                 </div>
             {% endif %}
+        {% else %}
+        <p> No News Items </p>
         {% endfor %}
     </div>
-
+<!-- 
     <p class="title is-4"> News Items d2</p>
     <hr/>
 
@@ -71,7 +73,7 @@
                 </div>
             {% endif %}
         {% endfor %}
-    </div>
+    </div> -->
 
     <div class="block">
         <p class="title is-4"> Press Releases</p>
@@ -86,6 +88,9 @@
                     {% include post-card.html %}
                 </div>
             {% endif %}
+        {% else %}
+          <p> No Press Releases </p>
         {% endfor %}
     </div>
+
 {% endif %}
