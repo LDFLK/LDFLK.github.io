@@ -22,35 +22,6 @@
         {% include landing-hero.html %}
     {% endunless %}
     {% include callouts.html %}
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                {% if page.menubar_toc %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-                    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
-                </div>
-                {% elsif page.menubar %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% include menubar.html %}
-                </div>
-                {% endif %}
-                <div class="column {{ content_width }}">
-                    {% include tabs.html %}
-                    {% include tools.html %}
-                    {% include showcase.html %}
-                    {% include sponsors.html %}
-                    {% include gallery.html %}
-                    
-                </div>
-                {% if site.posts and page.show_sidebar %}
-                <div class="column is-4-desktop is-12-tablet">
-                    {% include latest-posts.html %}
-                </div>
-                {% endif %}
-            </div>
-        </div>
-    </section>
     {{ content }}
     {% unless page.hide_footer %}
         {% include footer.html %}
