@@ -116,7 +116,73 @@ $primary: #002171;
 /********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6 {
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+// Tool slider
+.fade-carousel-tools {
+  position: relative;
+  height: 50vh;
+}
+.fade-carousel-tools .carousel-inner .item {
+  height: 50vh;
+}
+.fade-carousel-tools .carousel-indicators > li {
+  margin: 0 2px;
+  background-color: #f39c12;
+  border-color: #f39c12;
+  opacity: .7;
+}
+.fade-carousel-tools .carousel-indicators > li.active {
+width: 10px;
+height: 10px;
+opacity: 1;
+}
+
+.fade-carousel-tools .carousel-inner .item .hero {
+  opacity: 0;
+}
+.fade-carousel-tools .carousel-inner .item.active .hero {
+  opacity: 1; 
+}
+
+.herotools {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 600px;
+  background-color: #00000085;
+  padding: 10px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+       -moz-transform: translate3d(-50%,-50%,0);
+        -ms-transform: translate3d(-50%,-50%,0);
+         -o-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+  
+}
+.herotools h1 {
+  font-size: 6em;    
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-carousel-tools .slides .slide-1, 
+.fade-carousel-tools .slides .slide-2,
+.fade-carousel-tools .slides .slide-3 {
   height: 50vh;
   background-size: cover;
   background-position: center center;
@@ -198,3 +264,4 @@ ul.jekyllcodex_accordion li input:checked + label {font-weight: bold;}
 ul.jekyllcodex_accordion li input:checked + label + div {display: block;}
 ul.jekyllcodex_accordion li label::before {content: "+"; font-weight: normal; font-size: 130%; line-height: 1.1rem; padding: 0; position: absolute; right: 0.5rem; transition: all 0.15s ease-in-out;}
 ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45deg);}
+
