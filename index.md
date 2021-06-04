@@ -18,7 +18,7 @@ slide1_button: Learn More
 slide2_title: My Local
 slide2_subtitle: Get insights into your neighborhood.
 slide2_image: /assets/img/banners/banner2.jpg
-slide2_link: #
+slide2_link: /tools/mylocal.html
 slide2_button: Learn More
 slide3_title: Lanka Data Foundation
 slide3_subtitle: Bringing Data Together
@@ -41,3 +41,6 @@ slide3_button: Learn More
         </div>
     </div>
 </section>
+
+
+{% include tools-card.html height="600" unit="px" duration="7" %}

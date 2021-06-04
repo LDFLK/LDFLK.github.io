@@ -2,9 +2,7 @@
 {% assign letters = letterstring | split: ',' %}
 {% assign sorted_tools = site.tools | sort: "rating" %}
 <section class="is-bold is-primary">
-  <div class="carousel slide fade-carousel-tools is-primary" data-ride="carousel" id="tool-carousel">
-    
-    <div class="overlay"></div>
+  <div class="carousel slide fade-carousel-tools carousel-fade is-primary"  id="tool-carousel">
   
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -20,20 +18,24 @@
         <div class="slide-{{ letters[forloop.index0] }}" style="background-image: url({{ site.baseurl }}{{ tool.image }})"></div>
         <div class="herotools">
           <hgroup>
-              <h1 class="is-size-3">{{ tool.title }}</h1>        
-              <p>{{ tool.subtitle }}</p>
+              <h1 class="is-size-3">{{ tool.title }}</h1>  
+              {% if tool.summary %}
+                <p class="is-lowercase">{{ tool.summary | markdownify }}</p>
+              {% else %}
+                <p class="is-lowercase">{{ tool.excerpt }}</p>
+              {% endif %}
           </hgroup>
-          <a href="{{ tool.link }}" class="btn btn-hero btn-lg" role="button">View More</a>
+          <a href="{{ tool.url }}" class="btn btn-hero btn-lg" role="button">View More</a>
         </div>
       </div>
       {% endfor %}
-      <!-- Controls -->
-      <a class="left carousel-control" href="#tool-carousel" data-slide="prev">
-        <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#tool-carousel" data-slide="next">
-        <span class="icon-next"></span>
-      </a> 
     </div> 
+    <!-- Controls -->
+    <a class="left carousel-control" href="#tool-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#tool-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a> 
   </div>
 </section>

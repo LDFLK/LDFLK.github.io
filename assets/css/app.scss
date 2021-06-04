@@ -120,7 +120,7 @@ $primary: #002171;
 .fade-carousel .slides .slide-4,
 .fade-carousel .slides .slide-5,
 .fade-carousel .slides .slide-6 {
-  height: 50vh;
+  height: 600px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -130,10 +130,10 @@ $primary: #002171;
 // Tool slider
 .fade-carousel-tools {
   position: relative;
-  height: 50vh;
+  height: 600px;
 }
 .fade-carousel-tools .carousel-inner .item {
-  height: 50vh;
+  height: 600px;
 }
 .fade-carousel-tools .carousel-indicators > li {
   margin: 0 2px;
@@ -157,13 +157,12 @@ opacity: 1;
 .herotools {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 25%;
   z-index: 3;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
   width: 600px;
-  background-color: #00000085;
+  background-color: #000000b0;
   padding: 10px;
   text-shadow: 1px 1px 0 rgba(0,0,0,.75);
     -webkit-transform: translate3d(-50%,-50%,0);
@@ -176,6 +175,7 @@ opacity: 1;
 .herotools h1 {
   font-size: 6em;    
   font-weight: bold;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
@@ -183,10 +183,28 @@ opacity: 1;
 .fade-carousel-tools .slides .slide-1, 
 .fade-carousel-tools .slides .slide-2,
 .fade-carousel-tools .slides .slide-3 {
-  height: 50vh;
+  height: 600px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.carousel-control{
+  background-color: black !important;
+  opacity: .5;
+  top: 50%  !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.carousel-control.right {
+  right: unset !important;
+  left: 41% !important;
+}
+
+.carousel-control.left {
+  right: unset !important;
+  left: 7% !important;
 }
 
 /********************************/
