@@ -5,7 +5,7 @@ description: Get to know your neighborhood government authorities, health clinic
 hero_image: /assets/img/products/mylocal.jpg
 # product_code: ABC124
 layout: tools
-image: /assets/img/products/mylocal-ss-2.png
+image: /assets/img/banners/banner2.jpg
 webapp: http://mylocal.datafoundation.lk/mylocal/admin/LK-1103
 # features:
 #     - label: Great addition to any home
