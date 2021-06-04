@@ -20,12 +20,10 @@
 
 title: Lanka Data Foundation
 email: info@datafoundation.lk
-description: >- # this means to ignore newlines until "baseurl:"
-  Lanka Data Foundation aims to make 100% of Sri Lanka's public data, digitized, efficiently processible, and accessible so Sri Lankans can make meaningful use of it.
+description: Lanka Data Foundation aims to make 100% of Sri Lanka's public data, digitized, efficiently processible, and accessible so Sri Lankans can make meaningful use of it.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ldflk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://ldflk.github.io" # the base hostname & protocol 
+github_username:  LDFLK
 fixed_navbar: top
 
 # Build settings
