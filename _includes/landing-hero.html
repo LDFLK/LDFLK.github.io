@@ -29,59 +29,44 @@
               <span class="sr-only">Next</span>
             </a>
         </div> -->
-    <section class="heroclass is-bold is-primary">
-        <div class="carousel slide fade-carousel  is-primary" data-ride="carousel" id="bs-carousel">
-            <!-- Overlay -->
-            <div class="overlay"></div>
-          
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#bs-carousel" data-slide-to="1"></li>
-              <li data-target="#bs-carousel" data-slide-to="2"></li>
-            </ol>
-            
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item slides active">
-                <div class="slide-1" style="background-image: url({{ site.baseurl }}{{ page.slide1_image }})"></div>
-                <div class="herob">
-                  <hgroup>
-                      <h1 class="is-size-1">{{ page.slide1_title }}</h1>        
-                      <h3>{{ page.slide1_subtitle }}</h3>
-                  </hgroup>
-                  <a href="{{ page.slide1_link }}" class="btn btn-hero btn-lg" role="button">{{ page.slide1_button }}</a>
-                </div>
-              </div>
-              <div class="item slides">
-                <div class="slide-2" style="background-image: url({{ site.baseurl }}{{ page.slide2_image }})"></div>
-                <div class="herob">
-                  <hgroup>
-                      <h1 class="is-size-1">{{ page.slide2_title }}</h1>        
-                      <h3>{{ page.slide2_subtitle }}</h3>
-                  </hgroup>
-                  <a href="{{ page.slide2_link }}" class="btn btn-hero btn-lg" role="button">{{ page.slide2_button }}</a>
-                </div>
-              </div>
-              <div class="item slides">
-                <div class="slide-3" style="background-image: url({{ site.baseurl }}{{ page.slide3_image }})"></div>
-                <div class="herob">
-                  <hgroup>
-                      <h1 class="is-size-1">{{ page.slide3_title }}</h1>        
-                      <h3>{{ page.slide3_subtitle }}</h3>
-                  </hgroup>
-                  <a href="{{ page.slide3_link }}" class="btn btn-hero btn-lg" role="button">{{ page.slide3_button }}</a>
-                </div>
-              </div>
-              <!-- Controls -->
-              <!-- <a class="left carousel-control" href="#bs-carousel" data-slide="prev">
-                <span class="icon-prev"></span>
-              </a>
-              <a class="right carousel-control" href="#bs-carousel" data-slide="next">
-                <span class="icon-next"></span>
-              </a>  -->
-            </div> 
+{% assign letterstring = "1,2,3,4,5,6,7,8,9" %}
+{% assign letters = letterstring | split: ',' %}
 
-              
-        </div>
-    </section>
+<section class="heroclass is-bold is-primary">
+    <div class="carousel slide fade-carousel  is-primary" data-ride="carousel" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+      
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          {% for slide in page.slides %}
+          <li data-target="#bs-carousel" data-slide-to="{{ letters[forloop.index0] | minus: 1 }}" {% if forloop.first %}class="active"{% endif %} ></li>
+          {% endfor %}
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          {% for slide in page.slides %}
+          <div class="item slides {% if forloop.first %}active{% endif %}">
+            <div class="slide-{{ letters[forloop.index0] }}" style="background-image: url({{ site.baseurl }}{{ slide.image }})"></div>
+            <div class="herob">
+              <hgroup>
+                <h1 class="is-size-1">{{ slide.title }}</h1>        
+                <h3>{{ slide.subtitle }}</h3>
+              </hgroup>
+              <a href="{{ slide.link }}" class="btn btn-hero btn-lg" role="button">{{ slide.button }}</a>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- Controls -->
+          <!-- <a class="left carousel-control" href="#bs-carousel" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="right carousel-control" href="#bs-carousel" data-slide="next">
+            <span class="icon-next"></span>
+          </a>  -->
+        </div> 
+
+          
+    </div>
+</section>
