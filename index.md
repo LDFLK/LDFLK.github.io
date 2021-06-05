@@ -23,8 +23,19 @@ slide2_button: Learn More
 slide3_title: Lanka Data Foundation
 slide3_subtitle: Bringing Data Together
 slide3_image: /assets/img/slide4.jpeg
-slide3_link: #
+slide3_link: 
 slide3_button: Learn More
+slides:
+- title: Lanka Data Foundation
+  subtitle: Strengthening transparency and accountability in governance through verified public data.
+  image: /assets/img/banners/banner1.jpg
+  link: #
+  button: Learn More
+- title: My Local
+  subtitle: Get insights into your neighborhood.
+  image: /assets/img/banners/banner2.jpg
+  link: /tools/mylocal.html
+  button: Learn More
 ---
 <!-- <section class="section px-0 py-6 is-large" style="background-image: url( {{site.baseurl}}/assets/img/update2.jpg ); background-size: cover; background-position: center"> -->
 <section class="section px-0 py-6 is-large" >
