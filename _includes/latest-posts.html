@@ -1,4 +1,4 @@
-<p class="title is-4">Latest News</p>
+<p class="title is-4">Latest Blogs</p>
 
 <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}
@@ -6,7 +6,7 @@
         {% include post-card.html %}
     </div>
     {% else %}
-        <p> No News Items </p>
+        <p> No Blog Items </p>
     {% endfor %}
 </div>
 

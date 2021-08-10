@@ -29,12 +29,12 @@
       link: /#
     - name: Collections
       link: /#
-- name: Corporates
-  link: /corporates/
-- name: Government Organizations
-  link: /gov/
-- name: News
-  link: /news/
+# - name: Corporates
+#   link: /corporates/
+# - name: Government Organizations
+#   link: /gov/
+- name: Blog
+  link: /blog/
 - name: Contact Us
   link: /contact/
 - name: Data Portal
