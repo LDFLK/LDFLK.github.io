@@ -38,7 +38,20 @@ slides:
   button: Learn More
 ---
 <!-- <section class="section px-0 py-6 is-large" style="background-image: url( {{site.baseurl}}/assets/img/update2.jpg ); background-size: cover; background-position: center"> -->
-
+<section class="section px-0 py-6 is-large" >
+    <div class="container "> <!-- is-fluid p-0 m-0 -->
+        <p class="title is-3 is-uppercase has-text-weight-bold">Latest Blogs</p>
+        <div class="columns">
+            {% for post in site.posts limit:4 %}
+            <div class="column is-3">
+                {% include post-card.html %}
+            </div>
+            {% else %}
+                <p> No Blog Items </p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
 
 {% include tools-card.html height="600" unit="px" duration="7" %}
