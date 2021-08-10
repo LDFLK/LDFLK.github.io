@@ -51,10 +51,10 @@
             <div class="slide-{{ letters[forloop.index0] }}" style="background-image: url({{ site.baseurl }}{{ slide.image }})"></div>
             <div class="herob">
               <hgroup>
-                <h1 class="is-size-1">{{ slide.title }}</h1>        
-                <h3>{{ slide.subtitle }}</h3>
+                <h1 class="is-size-1 has-background-white has-text-black py-2 pr-6">{{ slide.title }}</h1>        
+                <h3 class="has-background-white has-text-black py-2 pr-6">{{ slide.subtitle }}</h3>
               </hgroup>
-              <a href="{{ slide.link }}" class="btn btn-hero btn-lg" role="button">{{ slide.button }}</a>
+              <a href="{{ slide.link }}" class="button mt-6 is-outlined" role="button">{{ slide.button }}</a>
             </div>
           </div>
           {% endfor %}

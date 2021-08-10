@@ -1,6 +1,10 @@
 ---
 ---
 $primary: #002171;
+// $body-family: 'Work Sans', sans-serif;
+// $body-color: #000;
+// $body-size: 21px;
+// $body-line-height: 31px;
 // Import Main CSS file from theme
 @import "main";
 
@@ -49,9 +53,8 @@ $primary: #002171;
     left: 50%;
     z-index: 3;
     color: #fff;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
       -webkit-transform: translate3d(-50%,-50%,0);
          -moz-transform: translate3d(-50%,-50%,0);
           -ms-transform: translate3d(-50%,-50%,0);
@@ -63,6 +66,16 @@ $primary: #002171;
     font-weight: bold;
     margin: 0;
     padding: 0;
+    width:fit-content;
+}
+.herob h3 {
+    width:fit-content;
+}
+.herob .button {
+    border:2px solid #000;
+}
+.herob .button:hover {
+    border:2px solid #000;
 }
 
 
@@ -283,3 +296,14 @@ ul.jekyllcodex_accordion li input:checked + label + div {display: block;}
 ul.jekyllcodex_accordion li label::before {content: "+"; font-weight: normal; font-size: 130%; line-height: 1.1rem; padding: 0; position: absolute; right: 0.5rem; transition: all 0.15s ease-in-out;}
 ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45deg);}
 
+// Footer Style
+.footer ul{
+  margin-top: 20px;
+}
+.footer li{
+  margin-top: 10px;
+}
+.footer-main{
+  // border-top: Í1px solid #000;
+  border-bottom: 1px solid #000;
+}
