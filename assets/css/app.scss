@@ -309,3 +309,5 @@ ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45
   // border-top: Í1px solid #000;
   border-bottom: 1px solid #000;
 }
+.card-image:first-child img {border-top-left-radius: 9999px;border-top-right-radius: 9999px;}
+.card-image:last-child img { border-bottom-left-radius: 9999px; border-bottom-right-radius: 9999px; }

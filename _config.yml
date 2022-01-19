@@ -27,7 +27,7 @@ github_username:  LDFLK
 fixed_navbar: top
 
 # Build settings
-theme: bulma-clean-theme
+remote-theme: bulma-clean-theme
 plugins:
   - jekyll-feed
 
