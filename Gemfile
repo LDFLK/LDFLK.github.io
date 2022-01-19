@@ -18,7 +18,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15"
 end
 
-gem 'bulma-clean-theme', '~> 0.12'
+gem "bulma-clean-theme", "~> 0.11.1"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
